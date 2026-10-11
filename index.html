@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- EDIT: browser tab title -->
-<title>Chinmay Mhatre — Computational Chemistry</title>
+<title>Chinmay Mhatre — Computational Materials Scientist</title>
 
 <!-- EDIT: one sentence for Google results and link previews -->
-<meta name="description" content="Chinmay Mhatre, computational chemist at the University of Pittsburgh. Machine learning interatomic potentials, reactive force fields, and molecular simulation of MOFs and stainless steel.">
+<meta name="description" content=" Chinmay Mhatre, computational materials scientist, Ph.D. from University of Pittsburgh. Machine learning interatomic potentials, reactive force fields, and molecular simulation of MOFs and other material systems.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,8 +41,8 @@
 <section class="hero">
   <div class="hero-text">
     <h1>Chinmay Mhatre</h1>
-    <p class="standfirst">I build simulations of chemistry that quantum mechanics can describe but not afford. Machine learning potentials, reactive force fields, and the molecular dynamics that test them.</p>
-    <p class="affil">Research Associate in Computational Chemistry, University of Pittsburgh. PhD in Chemical Engineering, 2026, advised by J. Karl Johnson and John Keith.</p>
+    <p class="standfirst">I build simulations tools with quantum mechanics theory and machine learning, including Machine learning potentials, semiempirical reactive force fields, and the classicla and ab initio molecular dynamics.</p>
+    <p class="affil">PhD in Chemical Engineering, 2026, advised by J. Karl Johnson and John Keith.</p>
 
     <!-- EDIT: your links. Replace YOUR-USERNAME with your GitHub handle.
          For the CV, drop the PDF into this folder and name it cv.pdf -->
@@ -50,8 +50,8 @@
       <a href="mailto:mhatrec82@gmail.com">Email</a>
       <a href="https://scholar.google.com/citations?user=yOHMV2gAAAAJ&hl=en">Google Scholar</a>
       <a href="https://www.linkedin.com/in/chinmay-m-b4a5a6130/">LinkedIn</a>
-      <a href="https://github.com/YOUR-USERNAME">GitHub</a>
-      <a href="cv.pdf">CV</a>
+      <a href="https://github.com/ChinmayVMhatre">GitHub</a>
+      <a href="https://github.com/ChinmayVMhatre/chinmayvmhatre.github.io/blob/main/Chinmay_Mhatre_CV_27.pdf">CV</a>
     </p>
   </div>
 
@@ -155,11 +155,6 @@
       <span class="pub-meta">In preparation.</span>
     </li>
     <li>
-      <span class="pub-title">Developing Cr/O/Cl ReaxFF Parameters to Understand Stainless Steel Depassivation in Saline Environments</span>
-      <span class="pub-authors">Mhatre, C. V.; van Duin, A.; Keith, J. A.</span>
-      <span class="pub-meta">In preparation.</span>
-    </li>
-    <li>
       <span class="pub-title">Reactions of GB and HD in MOF-808-NH<sub>2</sub> Predicted from Machine Learning Interatomic Potentials</span>
       <span class="pub-authors">Mhatre, C. V.; Gordon, A. Y.; Ananthabhotala, L. Y.; Achar, S.; Johnson, J. K.</span>
       <span class="pub-meta">In preparation.</span>
@@ -176,13 +171,13 @@
   <h2>Software</h2>
 
   <dl class="projects">
-    <dt><a href="https://github.com/YOUR-USERNAME">QM9 electronic structure pipeline</a></dt>
-    <dd>Parses Gaussian output at scale to pull out dipole moments, Mayer and Wiberg bond orders, and condensed-to-atoms density matrices, then writes to sharded HDF5 for ML training. Includes SOAP and UMAP embeddings, ReaxFF and Pauling bond orders, and Chemiscope export for browsing 133k molecules.</dd>
+    <dt><a href="https://github.com/ChinmayVMhatre"> Electronic structure data pipeline for Gaussian output</a></dt>
+    <dd>Parses Gaussian output at scale to pull out bond order metrices, especially condensed-to-atoms density matrices, then writes to sharded HDF5 for easier parsing. Plotting includes generation of SOAP descriptors and UMAP embeddings. The script also parses ReaxFF and Pauling bond orders.</dd>
+    
+    <dt><a href="https://github.com/ChinmayVMhatre">Kaggle competitions</a></dt>
+    <dd>Competition entry for the Regression of Molecular Properties challenge, using XGBoost to predict glass transition temperatures using SMILES representations, and GenAI project of generating molecular SMILES from mass spectroscopy data using Pytorch Transformer libraries.</dd>
 
-    <dt><a href="https://github.com/YOUR-USERNAME">Active learning driver for MLIP training</a></dt>
-    <dd>Iterative sampling, labeling, and retraining against DFT references, with distance- and latent-space uncertainty metrics deciding what goes in the next batch.</dd>
-
-    <dt><a href="https://github.com/YOUR-USERNAME">NEB workflow tooling</a></dt>
+    <dt><a href="https://github.com/ChinmayVMhatre">NEB workflow tooling</a></dt>
     <dd>ASE and LAMMPS scaffolding for reaction path calculations, including native partition-based NEB runs on SLURM clusters.</dd>
   </dl>
 </section>
@@ -213,25 +208,23 @@
     <li><span class="when">2026–</span> <span class="what"><strong>Research Associate, Computational Chemistry</strong>, University of Pittsburgh. Sponsored by the Naval Research Laboratory.</span></li>
     <li><span class="when">2020–2026</span> <span class="what"><strong>PhD, Chemical Engineering</strong>, University of Pittsburgh. Thesis on atomistic phenomena in Zr-based metal-organic frameworks and stainless steel, using classical and quantum mechanical calculations.</span></li>
     <li><span class="when">2023</span> <span class="what"><strong>Graduate Student Intern</strong>, Chemical Separations Group, Oak Ridge National Laboratory. Benchmarked six free-energy solvation workflows against experimental partition coefficients; the most accurate one became the standard protocol for a DOE purification program.</span></li>
-    <li><span class="when">2022–2025</span> <span class="what"><strong>Board member</strong>, Engineering Graduate Student Organization, University of Pittsburgh. Vice President, Secretary, and Professional Development Officer, running events for 500+ graduate students with a team of eight.</span></li>
-    <li><span class="when">2022–2024</span> <span class="what"><strong>Teaching assistant</strong> for chemical reaction engineering, thermodynamics, and mathematical methods.</span></li>
     <li><span class="when">2016–2020</span> <span class="what"><strong>BChE, Chemical Engineering</strong>, Institute of Chemical Technology, Mumbai.</span></li>
   </ul>
 
   <h3>Tools</h3>
-  <p class="tools">Electronic structure and simulation: VASP, Gaussian, ORCA, Quantum ESPRESSO, LAMMPS, OpenMM, PLUMED, RASPA, Cassandra, CREST, PACKMOL, WHAM. Methods: DFT, molecular dynamics with FEP and metadynamics, MLIP development, ReaxFF parametrization, GCMC and Gibbs ensemble Monte Carlo, vibrational frequency analysis. Machine learning: PyTorch, TensorFlow, MACE, DeepMD, UMA, scikit-learn, equivariant neural networks, VAEs and GANs, Weights &amp; Biases. Day to day: Python with NumPy, pandas, SciPy, ASE, RDKit, pymatgen and UMAP; Linux and Bash; Git; SLURM on GPU clusters; SQL; LaTeX.</p>
+  <p class="tools">Electronic structure and simulation: VASP, Gaussian, ORCA, Quantum ESPRESSO, LAMMPS, PLUMED, RASPA, Cassandra, CREST, PACKMOL, WHAM. Methods: DFT, molecular dynamics with FEP and metadynamics, MLIP development, ReaxFF parametrization, GCMC and Gibbs ensemble Monte Carlo, vibrational frequency analysis. Machine learning: PyTorch, TensorFlow, MACE, DeepMD, UMA, scikit-learn, equivariant neural networks, VAEs and GANs, Weights &amp; Biases. Day to day: Python with NumPy, pandas, SciPy, ASE, RDKit, pymatgen and UMAP; Linux and Bash; Git; SLURM on GPU clusters; SQL; LaTeX.</p>
 </section>
 
 <section id="contact">
   <h2>Get in touch</h2>
-  <p>Write to me at <a href="mailto:mhatrec82@gmail.com">mhatrec82@gmail.com</a>. I'm always up for talking about force fields, active learning, or anything where the simulation refuses to behave.</p>
+  <p>Write to me at <a href="mailto:mhatrec82@gmail.com">mhatrec82@gmail.com</a>.</p>
 </section>
 
 </main>
 
 <footer>
   <!-- EDIT: update the date when you change the page -->
-  <p>Hand-built. Last updated September 2026.</p>
+  <p> Last updated October 2026.</p>
 </footer>
 
 </body>
