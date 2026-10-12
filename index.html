@@ -8,7 +8,7 @@
 <title>Chinmay Mhatre — Computational Materials Scientist</title>
 
 <!-- EDIT: one sentence for Google results and link previews -->
-<meta name="description" content=" Chinmay Mhatre, computational materials scientist, Ph.D. from University of Pittsburgh. Machine learning interatomic potentials, reactive force fields, and molecular simulation of MOFs and other material systems.">
+<meta name="description" content="Chinmay Mhatre, computational materials scientist, Ph.D. from University of Pittsburgh. Machine learning interatomic potentials, reactive force fields, and molecular simulation of MOFs and other material systems.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +80,7 @@
         <circle cx="180" cy="30" r="7"/><circle cx="80" cy="30" r="7"/>
       </g>
     </svg>
-    <figcaption>One missing linker. Order the defects instead of scattering them and isopropanol moves through UiO-66 a hundred times faster.</figcaption>
+    <figcaption> A representative schematic of MOF with one missing linker. Ordering defects instead of scattering them can make isopropanol transport through UiO-66 a hundred times faster.</figcaption>
   </figure>
 </section>
 
@@ -101,19 +101,24 @@
   <article>
     <h3>Molecular transport in defective UiO-66</h3>
     <p class="funder">DTRA</p>
-    <p>Slow diffusion was the bottleneck on this material, so I engineered ordered point defects and got a hundredfold improvement in isopropanol diffusivity over a randomly defective structure. Pinning down what controls transport took self- and transport diffusivities across four concentrations, ten independent MSD analyses per point in LAMMPS, and GCMC adsorption in RASPA. Hydroxylated variants suppress transport as loading rises. On the reactivity side, CI-NEB calculations in VASP across four capping-group chemistries showed that the binding mechanism, not sterics, sets hydrolysis rates, and DFT-derived IR spectra gave the experimentalists vibrational fingerprints to check the modified frameworks against.</p>
+    <p>Slow diffusion of molecules is a known bottleneck of UiO-66, so I engineered ordered point defects and got a tenfold improvement in isopropanol diffusivity over a randomly defective structure. Pinning down what controls transport took self- and transport diffusivities across four concentrations, ten independent MSD analyses per point in LAMMPS, and GCMC adsorption in RASPA. Hydroxylated variants suppress transport as loading rises.</p>
   </article>
 
   <article>
+    <h3>Reactivity in Metal-Organic Frameworks: a DFT study</h3>
+    <p class="funder">DTRA</p>
+    <p>On the reactivity side, CI-NEB calculations in VASP across four capping-group chemistries showed that the binding mechanism, not sterics, sets hydrolysis rates. </p>
+  </article>
+  <article>
     <h3>Reactive force fields for stainless steel corrosion</h3>
     <p class="funder">Naval Research Laboratory</p>
-    <p>Chloride-induced pitting starts at the atomic scale, and modeling it means having parameters that describe chromium oxide passive films breaking down. I'm developing and validating Cr/O/Cl ReaxFF parameters in LAMMPS for exactly that, which is a high-dimensional fitting problem against a small and precious reference set.</p>
+    <p>Chloride-induced pitting starts at the atomic scale; Modeling requires parameters describing chromium oxide passive films reacting with chlorine and breaking down.Hence, I'm developing and validating Cr/O/Cl ReaxFF parameters in LAMMPS, a soultion for a specific system.</p>
   </article>
 
   <article>
     <h3>Thermophysical properties of fuel additives</h3>
     <p class="funder">Lubrizol</p>
-    <p>Three ZDDP molecules and their precursors had no experimental data at all, which makes synthesis prioritization guesswork. Gibbs ensemble Monte Carlo in Cassandra produced the first critical temperature and pressure estimates for them, validated within ten percent of the densities that were available. I also correlated conformational diversity with dipole moment magnitudes using dimensionality reduction, to connect structure back to the properties that matter.</p>
+    <p>Three Zn Organometallic molecules and their organic precursors had no experimental data at all. Gibbs ensemble Monte Carlo in Cassandra produced the first critical temperature and pressure estimates for them, validated within ten percent of the densities that were available. I also correlated conformational diversity with dipole moment magnitudes using dimensionality reduction, establishing structure-property relationships.</p>
   </article>
 </section>
 
@@ -171,14 +176,14 @@
   <h2>Software</h2>
 
   <dl class="projects">
-    <dt><a href="https://github.com/ChinmayVMhatre"> Electronic structure data pipeline for Gaussian output</a></dt>
+    <dt><a href="https://github.com/ChinmayVMhatre/Bond-Order-Analysis-tools"> Electronic structure data pipeline for Gaussian output</a></dt>
     <dd>Parses Gaussian output at scale to pull out bond order metrices, especially condensed-to-atoms density matrices, then writes to sharded HDF5 for easier parsing. Plotting includes generation of SOAP descriptors and UMAP embeddings. The script also parses ReaxFF and Pauling bond orders.</dd>
     
-    <dt><a href="https://github.com/ChinmayVMhatre">Kaggle competitions</a></dt>
+    <dt><a href="https://github.com/ChinmayVMhatre/Kaggle_Competitions">Kaggle competitions</a></dt>
     <dd>Competition entry for the Regression of Molecular Properties challenge, using XGBoost to predict glass transition temperatures using SMILES representations, and GenAI project of generating molecular SMILES from mass spectroscopy data using Pytorch Transformer libraries.</dd>
 
-    <dt><a href="https://github.com/ChinmayVMhatre">NEB workflow tooling</a></dt>
-    <dd>ASE and LAMMPS scaffolding for reaction path calculations, including native partition-based NEB runs on SLURM clusters.</dd>
+    <!--<a href="https://github.com/ChinmayVMhatre">NEB workflow tooling</a></dt>
+    <dd>ASE and LAMMPS scaffolding for reaction path calculations, including native partition-based NEB runs on SLURM clusters.</dd-->
   </dl>
 </section>
 
