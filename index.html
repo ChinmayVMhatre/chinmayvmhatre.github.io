@@ -80,7 +80,7 @@
         <circle cx="180" cy="30" r="7"/><circle cx="80" cy="30" r="7"/>
       </g>
     </svg>
-    <figcaption> A representative schematic of MOF with one missing linker. Ordering defects instead of scattering them can make isopropanol transport through UiO-66 a hundred times faster.</figcaption>
+    <figcaption> A representative schematic of a MOF with one missing linker. Ordering defects instead of scattering them can make isopropanol transport through UiO-66 a hundred times faster.</figcaption>
   </figure>
 </section>
 
@@ -95,13 +95,13 @@
   <article>
     <h3>Machine learning potentials for reactive systems</h3>
     <p class="funder">DTRA</p>
-    <p>Reactive events are rare, expensive to label, and poorly represented in equilibrium training data. I benchmarked an in-house active learning protocol against the published standard and cut compute hours in half at equal accuracy, then added a latent-space uncertainty metric so the loop can tell genuinely new configurations from ones it has already seen. With the trained potentials I ran over a hundred molecular dynamics simulations of catalytic kinetics at a scale DFT can't reach, which is how surface poisoning turned up as the root cause of performance loss. The protocol is now running on chemical threat neutralization in MOF-808.</p>
+    <p>Reactive events are rare, expensive to label, and poorly represented in equilibrium training data. I benchmarked an in-house active learning protocol against the published standard and cut compute hours in half while improving accuracy, along with a latent-space uncertainty metric that quantifies how much new configurations differ from those it has already generated. With the trained potentials, I ran over a hundred molecular dynamics simulations of catalytic kinetics with larger atomic systems, which are expensive for DFT, and found that surface poisoning was the root cause of the performance loss.</p>
   </article>
 
   <article>
     <h3>Molecular transport in defective UiO-66</h3>
     <p class="funder">DTRA</p>
-    <p>Slow diffusion of molecules is a known bottleneck of UiO-66, so I engineered ordered point defects and got a tenfold improvement in isopropanol diffusivity over a randomly defective structure. Pinning down what controls transport took self- and transport diffusivities across four concentrations, ten independent MSD analyses per point in LAMMPS, and GCMC adsorption in RASPA. Hydroxylated variants suppress transport as loading rises.</p>
+    <p>Slow molecular diffusion is a known bottleneck in UiO-66, so I engineered ordered point defects and achieved a tenfold increase in isopropanol diffusivity over a randomly defective structure. Pinning down what controls transport took self- and transport diffusivities across four concentrations, ten independent MSD analyses per point in LAMMPS, and GCMC adsorption in RASPA. Hydroxylated variants suppress transport as loading rises.</p>
   </article>
 
   <article>
@@ -109,10 +109,11 @@
     <p class="funder">DTRA</p>
     <p>On the reactivity side, CI-NEB calculations in VASP across four capping-group chemistries showed that the binding mechanism, not sterics, sets hydrolysis rates. </p>
   </article>
+  
   <article>
     <h3>Reactive force fields for stainless steel corrosion</h3>
     <p class="funder">Naval Research Laboratory</p>
-    <p>Chloride-induced pitting starts at the atomic scale; Modeling requires parameters describing chromium oxide passive films reacting with chlorine and breaking down.Hence, I'm developing and validating Cr/O/Cl ReaxFF parameters in LAMMPS, a soultion for a specific system.</p>
+    <p>Chloride-induced pitting starts at the atomic scale; modeling requires parameters that describe chromium oxide passive films reacting with chlorine and breaking down. Hence, I'm developing and validating Cr/O/Cl ReaxFF parameters in LAMMPS, a soultion for a specific system.</p>
   </article>
 
   <article>
@@ -211,9 +212,9 @@
 
   <ul class="cvlist">
     <li><span class="when">2026–</span> <span class="what"><strong>Research Associate, Computational Chemistry</strong>, University of Pittsburgh. Sponsored by the Naval Research Laboratory.</span></li>
-    <li><span class="when">2020–2026</span> <span class="what"><strong>PhD, Chemical Engineering</strong>, University of Pittsburgh. Thesis on atomistic phenomena in Zr-based metal-organic frameworks and stainless steel, using classical and quantum mechanical calculations.</span></li>
+    <li><span class="when">2020–2026</span> <span class="what"><strong>Ph.D., Chemical Engineering</strong>, University of Pittsburgh. Thesis on atomistic phenomena in Zr-based metal-organic frameworks and stainless steel, using classical and quantum mechanical calculations.</span></li>
     <li><span class="when">2023</span> <span class="what"><strong>Graduate Student Intern</strong>, Chemical Separations Group, Oak Ridge National Laboratory. Benchmarked six free-energy solvation workflows against experimental partition coefficients; the most accurate one became the standard protocol for a DOE purification program.</span></li>
-    <li><span class="when">2016–2020</span> <span class="what"><strong>BChE, Chemical Engineering</strong>, Institute of Chemical Technology, Mumbai.</span></li>
+    <li><span class="when">2016–2020</span> <span class="what"><strong>B.E., Chemical Engineering</strong>, Institute of Chemical Technology, Mumbai.</span></li>
   </ul>
 
   <h3>Tools</h3>
